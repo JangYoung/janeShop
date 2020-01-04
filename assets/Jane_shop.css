@@ -1,0 +1,481 @@
+body {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: tahoma, arial, 宋体;
+}
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+/*清除浮动*/
+.clear:after{
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/*版头*/
+.header{
+    height: 105px;
+    background: url("../assets/image/headerbg.png") repeat-x;
+}
+.header li{
+    float: left;
+}
+.header .header1{
+    width: 990px;
+    height: 105px;
+    margin: 0 auto;
+    position: relative;
+}
+.header1 .top .logo{
+    margin: 0 0 0 10px;
+    display: block;
+    float: left;
+}
+.header1 .top .search{
+    left: 198px;
+    position: absolute;
+    top: 20px;
+}
+.header1 .top .search input{
+    border: 1px solid #BABEBF;
+    color: #999999;
+    font-size: 14px;
+    height: 17px;
+    padding: 3px 6px 5px 6px;
+    width: 200px;
+}
+.header1 .top .skin li{
+    margin-right: 4px;
+}
+.header1 .top .skin{
+    float: right;
+}
+.header1 .top .skin ul{
+    width: 120px;
+    height: 15px;
+    padding: 4px;
+    margin: 10px;
+}
+.header1 .top .skin ul li a {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    color: transparent;
+}
+.header1 .top .skin ul li{
+    background-image: url("../assets/image/theme.gif") ;
+    width: 15px;
+    height: 15px;
+}
+.skin .color{
+    background-position-y: 15px;
+}
+#skin_1 {
+    background-position-x: 15px;
+}
+#skin_2 {
+    background-position-x: 35px;
+}
+#skin_3 {
+    background-position-x: 55px;
+}
+#skin_4 {
+    background-position-x: 75px;
+}
+#skin_5 {
+    background-position-x: 95px;
+}
+/*导航栏*/
+.header .nav{
+    width: 990px;
+    line-height: 37px;
+    background-color: #4A4A4A;
+    float: left;
+}
+.header .nav ul{
+    padding-left: 25px;
+}
+.header .nav li{
+    margin-right: 14px;
+    position: relative;
+}
+.header .nav li a{
+    display: block;
+    padding: 0 8px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+    height: 37px;
+}
+.header .nav li .info{
+    background: #FFFFFF;
+    border: 1px solid #B1B1B1;
+    border-top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 37px;
+    width: 474px;
+    z-index: 1000;
+    display: none;
+}
+.header .nav li .info a{
+    color: #666666;
+}
+.header .nav li .info a:hover{
+    text-decoration: underline;
+}
+.header .nav li .info dl{
+    overflow: hidden;
+    margin: 10px 12px;
+    padding: 8px 0;
+}
+.header .nav li .info .top{
+    border-bottom: 1px dashed #C4C4C4;
+}
+.header .nav li .info dt{
+    float: left;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 4px 5px;
+    text-align: center;
+    width: 76px;
+}
+.header .nav li .info dt a{
+    display: block;
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 37px;
+}
+.header .nav li .info dd{
+    float: left;
+    overflow: hidden;
+    width: 360px;
+}
+.header .nav li .info dd em{
+    border-right: 1px solid #CCCCCC;
+    float: left;
+    font-style: normal;
+    height: 14px;
+    line-height: 14px;
+    margin: 5px 0;
+    padding: 0 8px;
+}
+.header .nav li .info dd em a{
+    color: #666666;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+}
+
+
+
+/*内容*/
+.content{
+    width:990px;
+    height:580px;
+    padding: 10px 0;
+    margin:0 auto;
+}
+.content .left{
+    width:187px;
+    height:560px;
+    margin:0 11px 0 0;
+    float: left;
+}
+.content .left h2{
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    text-indent: 13px;
+    background-color: #6E6E6E;
+}
+.content .left .menu{
+    border-color: #6E6E6E;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    height: 524px;
+    overflow: hidden;
+    padding: 5px 10px 0;
+    width: 165px;
+}
+.content .left .menu h3{
+    border-bottom: 1px solid #EEEEEE;
+    height: 24px;
+    line-height: 24px;
+    width: 164px;
+    font-size: 13px;
+}
+.content .left .menu ul{
+    height: 96px;
+    padding: 0 2px 8px;
+}
+.content .left .menu ul li{
+    color: #AEADAE;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    width: 79px;
+    overflow: hidden;
+    position: relative;
+}
+.content .left .menu ul li a{
+    color: #444444;
+    font-size: 12px;
+}
+.content .left .menu ul li a:hover{
+    color: #008CD7;
+}
+.content .left .menu ul li .hot{
+    color: #F9044E;
+}
+.content .left .menu ul li .hot s{
+    background: url(../assets/image/hot.gif) no-repeat scroll 0 0 transparent;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    width: 21px;
+}
+/*右侧*/
+.content .right{
+    float: right;
+    width: 791px;
+    height: 600px;
+}
+
+/*广告轮播图*/
+
+.content .right .top li{
+    float: left;
+}
+.content .right .top .bd{
+    margin-right: 11px;
+    float: left;
+    position: relative;
+}
+.content .right .top .bd .picture{
+    width: 550px;
+    height: 320px;
+    overflow: hidden;
+}
+.content .right .top .bd .picture a{
+    display: block;
+}
+.content .right .top .bd .explain{
+    position: absolute;
+    bottom: 0px;
+}
+.content .right .top .bd .explain li{
+    width: 110px;
+    height: 42px;
+}
+.content .top .bd .explain a{
+    width: 79px;
+    height: 32px;
+    padding: 5px 15px;
+    margin-right: 1px;
+    background-color: #444444;
+    color: #FFFFFF;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    opacity: 0.7;
+    font-size: 12px;
+}
+.content .top .bd .explain a:hover{
+    background: url(image/adindex.gif) no-repeat center 39px #37A7D7;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.content .top .bd .explain a div{
+    overflow: hidden;
+    width: 79px;
+    height: 16px;
+}
+
+
+/*右侧广告*/
+.content .right .top .right_r .bd_2{
+    margin-bottom: 10px;
+    float:left;
+}
+.content .right .top .right_r .bd_2 a {
+
+    border: 1px solid #DFDFDF;
+    height: 176px;
+    width: 228px;
+    display: block;
+}
+.content .right .top .right_r .notice{
+    float: left;
+    border: 1px solid #DFDFDF;
+    height: 133px;
+    overflow: hidden;
+    width: 228px;
+}
+.content .right .top .right_r .notice h2{
+    height: 23px;
+    line-height: 23px;
+    border-bottom: 1px solid #DFDFDF;
+    text-indent: 12px;
+    display: block;
+    font-size: 14px;
+}
+.content .right .top .right_r .notice ul{
+    padding: 6px 2px 0 12px;
+}
+.content .right .top .right_r .notice ul li{
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.content .right .top .right_r .notice ul li a{
+    color: #666666;
+    font-size: 12px;
+}
+.content .right .top .right_r .notice ul li a:hover{
+    color: #008CD7;
+    float: left;
+    height: 230px;
+    margin: 10px 0 0;
+    overflow: hidden;
+    width: 790px;
+}
+
+/*底层广告*/
+.content .right .bottom{
+    float: right;
+    margin: 10px 0 0;
+    overflow: hidden;
+    width: 790px;
+}
+.content .right .bottom .nav3{
+    border-bottom: 1px solid #E4E4E4;
+    height: 29px;
+    position: relative;
+    width: 790px;
+    float: left;
+}
+.content .right .bottom .nav3 h2{
+    height: 29px;
+    line-height: 29px;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    font-size: 13px;
+}
+.content .right .bottom .nav3 ul{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+.content .right .bottom .nav3 li{
+    float: left;
+    margin: 0 10px 0 0;
+}
+.content .right .bottom .nav3 ul .chos{
+    background: url(../assets/image/chos.gif) no-repeat scroll 50% bottom transparent;
+    padding-bottom: 3px;
+    color: #FFFFFF;
+}
+.content .right .bottom .nav3 ul .chos a{
+    background-color: #FA5889;
+    color: #FFFFFF;
+}
+.content .right .bottom .nav3 li{
+    background-color: #E4E4E4;
+    height: 20px;
+    line-height: 20px;
+}
+.content .right .bottom .nav3 li a{
+    display: inline-block;
+    color: #000000;
+    height: 20px;
+    width: 24px;
+    padding: 0 10px;
+}
+.content .right .bottom .nav3 a:hover{
+    text-decoration: underline;
+    background-color: #FA5889;
+}
+
+
+/*品牌*/
+.content .right .bottom .brand{
+    float: left;
+    overflow: hidden;
+    margin: 8px 5px;
+    width: 790px;
+    height: 188px;
+    position: relative;
+}
+.content .right .bottom .brand ul{
+    width: 5000px;
+    position: absolute;
+    top:0
+}
+
+.content .right .bottom .brand li{
+    float: left;
+    height: 200px;
+    overflow: hidden;
+    padding: 0 5px;
+    width: 185px;
+}
+.content .right .bottom .brand li a{
+    display: inline-block;
+    width: 183px;
+    height: 164px;
+    position: relative;
+}
+.content .right .bottom .brand li a div{
+    position: absolute;
+    width: 183px;
+    height: 164px;
+    top: 0;
+}
+.content .right .bottom .brand li a div:hover{
+    background: url("../assets/image/zoom.gif") no-repeat center #EFEFEF;
+    opacity:0.5;
+}
+.content .right .bottom .brand li span{
+    background-color: #EFEFEF;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    text-align: center;
+    width: 183px;
+}
+.content .right .bottom .brand li span a{
+    display: inline-block;
+    height: 20px;
+    color: #666666;
+    font-size: 14px;
+}
+.content .right .bottom .brand li span a:hover{
+    color: #008CD7;
+}
+
+/*底部公司*/
+.footer{
+    margin: 0 auto;
+    width: 990px;
+    color: #666666;
+    padding: 18px 0;
+    text-align: center;
+}
